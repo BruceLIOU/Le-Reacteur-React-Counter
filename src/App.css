@@ -1,4 +1,8 @@
 /* Other rules */
+.App {
+  height: 100vh;
+  position: relative;
+}
 header{
     display: flex;
     align-items: center;
@@ -22,7 +26,12 @@ header span {
     justify-content: center;
     margin-top: 100px;
 }
-
+.line{
+  display: flex;
+  align-items: center;
+  width: 500px;
+  justify-content: center;
+}
 .counter {
     width: 150px;
     height: 150px;
@@ -65,7 +74,7 @@ footer span {
 }
 
 .hidden{
-    display: none;
+  visibility: hidden;
 }
 /* MEDIA QUERIES  */
 

@@ -1,10 +1,10 @@
-const Rest = (props) => {
+const Rest = ({ setCounter }) => {
   return (
     <div className="container">
       <div
         className="reset"
         onClick={() => {
-          props.setCounter(0);
+          setCounter(0);
         }}
       >
         <span>Reset</span>

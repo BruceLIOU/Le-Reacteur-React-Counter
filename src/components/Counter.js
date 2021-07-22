@@ -1,11 +1,11 @@
-const Counter = (props) => {
+const Counter = ({ counter, setCounter }) => {
   return (
     <div className="container">
       <div className="line">
         <div
-          className={`less ${props.counter === 0 ? "hidden" : ""}`}
+          className={`less ${counter === 0 ? "hidden" : ""}`}
           onClick={() => {
-            props.setCounter(props.counter - 1);
+            setCounter(counter - 1);
           }}
         >
           <svg
@@ -22,12 +22,12 @@ const Counter = (props) => {
           </svg>
         </div>
         <div className="counter">
-          <span>{props.counter}</span>
+          <span>{counter}</span>
         </div>
         <div
-          className={`more ${props.counter === 10 ? "hidden" : ""}`}
+          className={`more ${counter === 10 ? "hidden" : ""}`}
           onClick={() => {
-            props.setCounter(props.counter + 1);
+            setCounter(counter + 1);
           }}
         >
           <svg
